@@ -20,10 +20,15 @@ class Home extends StatelessWidget {
           backgroundColor: Colors.red[600],
         ),
         body: Center(
-          child: Icon(
-            Icons.airport_shuttle,
-            color: Colors.green,
-            size: 100.0,
+          child: ElevatedButton(
+            onPressed: () {
+              print('halo');
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.blue,
+              foregroundColor: Colors.black,
+            ),
+            child: Text('click me'),
           ),
         ),
         floatingActionButton: FloatingActionButton(
@@ -31,6 +36,6 @@ class Home extends StatelessWidget {
           child: Text('click'),
           backgroundColor: Colors.red[600],
         )
-    )/**/;
+    );
   }
 }
