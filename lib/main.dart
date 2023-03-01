@@ -19,15 +19,11 @@ class Home extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.red[600],
         ),
-        body: Center(
-          child: IconButton(
-            icon: Icon(Icons.alternate_email),
-            color: Colors.green,
-            iconSize: 150,
-            onPressed: (){
-              print('iam clicked!');
-            },
-          )
+        body:Container(
+            padding: EdgeInsets.all(50), // padding in dart
+            margin: EdgeInsets.all(50), // exactly the same as padding
+            color: Colors.green[400],
+            child: Text('hello'),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
